@@ -4,22 +4,19 @@
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
 }
+
+/* Header */
 header{
     background-image: var(--background-image);
     background-repeat: no-repeat;
-}
-
-.header {
-    padding: 5px 10px 5px 10px;
-    position: relative;
+    background-attachment: fixed;
     display: grid;
-    grid-template-areas:
-    "theme-menu"
-    "text";
-    grid-template-rows:1fr 3fr;
-    align-items: center;
+    grid-template-rows: 1fr 7fr 15fr;
+    width: 100vw;
+    height: 100vh;
 }
 
+/*REC*/
 .header__rec {
     position: absolute;
     top: 1rem;
@@ -28,10 +25,17 @@ header{
     color: #FF0070;
 }
 .header__rec::after {
-    content: "•";
-    color: #FF0070;
-    margin-left: 0.25rem;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF0070;
+    display: inline-block;
+    margin-left: 4px;
+    box-shadow: 0 0 5px 2px var(--accent-color);
 }
+
+/* Углы */
 .header__corner {
     position: absolute;
     width: 20px;
@@ -52,15 +56,38 @@ header{
     border-left: 3px solid var(--accent-color);
 }
 
-header button{
+/*Theme Menu & Button*/
+.header__theme-menu {
+    grid-area: theme-menu;
+    justify-self: end;
+    align-self: center;
+    margin-top: 20px;
+}
+
+header button {
+    margin-top: 10px;
     color: var(--accent-color);
     background-color: transparent;
     border: none;
+    text-align: center;
+    margin-right: 10px
 }
 .header__theme-menu-button_active {
-    border: var(--accent-color) 1px solid;
+    border: 1px var(--accent-color) solid;
 }
+
+/*Text*/
+.header__text{
+    display: grid;
+    grid-template-rows: 0.5fr 0.3fr 0.2fr;
+    height: 100%;
+    grid-area: text;
+    margin: 0 10px 0 10px;
+}
+
 .header__title{
+    grid-area: title;
+    line-height: 83%;
     color: var(--title-shadow-color);
     font-family: IBM Plex Mono, serif;
     font-weight: 700;
@@ -68,22 +95,37 @@ header button{
     font-size: 116px;
 }
 
-.header__text{
-    padding: 20px 0 20px 0;
-    grid-area: text;
-}
-
 .header__subtitle{
+    grid-area: subtitle;
     font-family: IBM Plex Mono, serif;
     font-weight: 700;
     font-size: 18px;
+    line-height: 23px;
     background-color: var(--accent-color);
     color: black;
+    padding: 1px;
 }
 
-.header__theme-menu{
-    text-align: center;
-    margin-left: auto;
-    margin-top: auto;
-    grid-area: theme-menu;
+@media (max-width: 1024px) {
+    .header {
+        grid-template-areas:
+      "header"
+      "theme-menu"
+      "text"
+    }
+    .header__text{
+        grid-template-areas:
+    "title"
+    "none"
+    "subtitle";
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+
+        grid-template-areas:
+        "theme-menu"
+        "text"
+    }
 }
