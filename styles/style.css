@@ -158,6 +158,23 @@ section:not(:first-child) {
     inline-size: 100%;
 }
 
+/*Footer*/
+.footer {
+    position: relative;
+    padding: var(--gap);
+    min-block-size: 668px;
+    block-size: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__logo {
+    color: var(--footer-logo-color);
+    font-size: var(--footer-logo-size);
+    line-height: 0.825;
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
 
 @media (max-width: 767px) {
 
