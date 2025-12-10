@@ -16,25 +16,6 @@ header{
     height: 100vh;
 }
 
-/*REC*/
-.header__rec {
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-weight: bold;
-    color: #FF0070;
-}
-.header__rec::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #FF0070;
-    display: inline-block;
-    margin-left: 4px;
-    box-shadow: 0 0 5px 2px var(--accent-color);
-}
-
 /* Углы */
 .header__corner {
     position: absolute;
@@ -45,15 +26,15 @@ header{
 .header__corner--top-right {
     right: 1%;
     top: 1%;
-    border-top: 3px solid var(--accent-color);
-    border-right: 3px solid var(--accent-color);
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
 }
 
 .header__corner--top-left {
     bottom: 1%;
     left: 1%;
-    border-bottom: 3px solid var(--accent-color);
-    border-left: 3px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
 }
 
 /*Theme Menu & Button*/
@@ -62,15 +43,20 @@ header{
     justify-self: end;
     align-self: center;
     margin-top: 20px;
+    font-size: 18px;
+}
+
+.header__theme-menu-button {
+    margin-top: 10px;
 }
 
 header button {
-    margin-top: 10px;
+    width: 70px;
+    height: 26px;
     color: var(--accent-color);
     background-color: transparent;
     border: none;
     text-align: center;
-    margin-right: 10px
 }
 .header__theme-menu-button_active {
     border: 1px var(--accent-color) solid;
