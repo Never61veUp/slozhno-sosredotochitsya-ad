@@ -198,6 +198,9 @@ section:not(:first-child) {
     .text-block__heading {
         margin-block-start: calc(1 * var(--gap));
     }
+    .text-block__paragraph {
+        margin-block-start: calc(var(--gap) / 2);
+    }
 
 }
 
