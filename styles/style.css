@@ -98,7 +98,7 @@ header button {
 
 /*Main*/
 main {
-    padding: calc(3 * var(--gap)) var(--gap);
+    padding: calc(4 * var(--gap)) var(--gap);
     font-size: var(--text-size);
     line-height: var(--line-height);
     font-family: 'IBM Plex mono', monospace;
