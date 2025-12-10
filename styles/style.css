@@ -217,4 +217,12 @@ section:not(:first-child) {
     .header__theme-menu-list {
         flex-direction: row;
     }
+    .what .text-blocks .text-block  {
+        margin-block-start: 0;
+    }
+    .what .text-blocks {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
 }
