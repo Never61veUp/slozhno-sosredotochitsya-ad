@@ -57,15 +57,24 @@ header {
 header button {
     width: 70px;
     height: 26px;
-    color: var(--text-color);
+    color: var(--theme-menu-button-color);
     font-family: 'IBM Plex regular', monospace;
     background-color: transparent;
     border: none;
     text-align: center;
 }
 
+.header__theme-menu-button:hover {
+    border: 1px solid var(--theme-menu-button-color);
+}
+
+.header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--theme-menu-button-color);
+    outline: none;
+}
+
 .header__theme-menu-button_active {
-    border: 1px var(--text-color) solid;
+    border: 1px var(--theme-menu-button-color) solid;
 }
 
 .header__rec {
@@ -133,7 +142,13 @@ section:not(:first-child) {
     text-decoration: none;
     text-shadow: 2px 2px 0 var(--accent-color);
 }
-
+.content__link:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+.content__link:focus {
+    border: 1px solid var(--paragraph-text-color);
+    outline: none;
+}
 .text-block {
     margin-top: calc(var(--gap) * 2);
 }

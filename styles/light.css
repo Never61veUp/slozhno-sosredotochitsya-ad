@@ -12,7 +12,15 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+    .header__rec {
+        position: absolute;
+        color: transparent;
+    }
+    .header__rec::after {
+        content: "";
+        width: 0;
+        height: 0;
+    }
 }
 
 @media (prefers-color-scheme: light) {
