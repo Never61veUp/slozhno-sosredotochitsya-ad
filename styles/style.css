@@ -7,7 +7,7 @@
 
 /* Header */
 header{
-    padding: 10px;
+    padding: var(--gap);
     background-image: var(--background-image);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -89,7 +89,7 @@ header button {
 .header__subtitle{
     grid-row: 3;
     font-family: IBM Plex Mono, serif;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 23px;
     background-color: var(--accent-color);
@@ -107,12 +107,15 @@ header button {
     .header__text {
         inline-size: 50%;
     }
+    .header__title {
+        position: relative;
+        inset-inline-start: calc(-1 * var(--gap));
+    }
 }
 
 @media (max-width: 1024px) {
 
 }
-
 
 @media (min-width: 1024px) {
 

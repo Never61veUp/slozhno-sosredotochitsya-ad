@@ -13,8 +13,8 @@
 @media (prefers-color-scheme: dark) {
     .header__rec {
         position: absolute;
-        top: 1rem;
-        right: 2rem;
+        top: calc(1.2 * var(--gap));
+        right: calc(1.5 * var(--gap));
         font-weight: bold;
         color: #FF0070;
     }
