@@ -12,6 +12,9 @@
     --gap: 10px;
     --main-font-family: 'IBM Plex mono', monospace;
     --subtitle-color: #000028;
+    --text-size: 18px;
+    --line-height: 1.3;
+    --paragraph-text-color: #F1B2CE;
 }
 
 :root.theme-light {
@@ -25,6 +28,7 @@
     --button-hover-bg: #cccccc;
     --background-image: url("../images/cover-image-light.png");
     --subtitle-color: #353430;
+    --paragraph-text-color: #353430;
 }
 
 @media (width >= 768px) {
