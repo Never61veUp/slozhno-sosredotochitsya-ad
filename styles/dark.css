@@ -10,9 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
-
-.theme-dark .page {
-    /*REC*/
+@media (prefers-color-scheme: dark) {
     .header__rec {
         position: absolute;
         top: 1rem;
@@ -31,3 +29,6 @@
         box-shadow: 0 0 5px 2px var(--accent-color);
     }
 }
+
+
+
