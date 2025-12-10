@@ -183,7 +183,9 @@ section:not(:first-child) {
     }
 }
 @media (min-width: 767px) {
-
+    main {
+        padding: calc(3 * var(--gap)) var(--gap);
+    }
     .header__text {
         inline-size: 50%;
     }
@@ -271,7 +273,9 @@ section:not(:first-child) {
 
 @media (min-width: 1024px) {
 
-
+    main {
+        padding: calc(3 * var(--gap)) var(--gap);
+    }
     .header__theme-menu {
         justify-self: center;
         align-self: start;
