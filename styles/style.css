@@ -201,7 +201,9 @@ section:not(:first-child) {
     .text-block__paragraph {
         margin-block-start: calc(var(--gap) / 2);
     }
-
+    section:not(:first-child) {
+        margin-top: calc(4 * var(--gap));
+    }
 }
 
 @media (min-width: 1024px) {
