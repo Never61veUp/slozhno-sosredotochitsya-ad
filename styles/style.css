@@ -98,7 +98,7 @@ header button {
 
 /*Main*/
 main {
-    padding: calc(4 * var(--gap)) var(--gap);
+    padding: calc(3 * var(--gap)) var(--gap);
     font-size: var(--text-size);
     line-height: var(--line-height);
     font-family: 'IBM Plex mono', monospace;
@@ -188,6 +188,15 @@ section:not(:first-child) {
 
     .text-block__heading:first-of-type {
         margin-top: 0;
+    }
+    .text-block__subtitle {
+        margin-block-start: calc(1 * var(--gap));
+    }
+    .text-block{
+        margin-top: calc(var(--gap) * 1);
+    }
+    .text-block__heading {
+        margin-block-start: calc(1 * var(--gap));
     }
 
 }
