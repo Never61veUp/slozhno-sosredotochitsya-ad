@@ -103,7 +103,7 @@ main {
     line-height: var(--line-height);
     font-family: 'IBM Plex mono', monospace;
 }
-section {
+section:not(:first-child) {
     margin-top: calc(5 * var(--gap));
 }
 /*Text*/
